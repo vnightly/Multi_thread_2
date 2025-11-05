@@ -1,0 +1,1 @@
+rootProject.name = "Multi_thread_2"
