@@ -52,9 +52,9 @@ public class Application {
         /*Гонка данных, тут увелечение потоков помогает,так как работа идет асинхронно, но из-за асинхронное работы теряются
         данных
         */
-        UnsyncBuffer unsync = new UnsyncBuffer(2,2,10_000, 1000, true);
+        UnsyncBuffer unsync = new UnsyncBuffer(2,2,40_000, 1000, true);
         unsync.run();
-        UnsyncBuffer unsync2 = new UnsyncBuffer(8,8,10_000, 1000, true);
+        UnsyncBuffer unsync2 = new UnsyncBuffer(8,8,40_000, 1000, true);
         unsync2.run();
 
         //Синхронизация семафорами, по букве еще нужен был семфор слим, но в джава семафор и так слим
